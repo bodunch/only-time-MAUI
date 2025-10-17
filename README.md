@@ -15,3 +15,5 @@ My goal was to create a presentable and attractive timer for use on my Windows 1
 &nbsp;&nbsp;&nbsp;&nbsp;┣ Display of current time  
 &nbsp;&nbsp;&nbsp;&nbsp;┗ Completion of work alarm clock  
 
+## How to work with this
+![<img width="1477" height="553" alt="image" src="https://github.com/user-attachments/assets/a2a4cd7b-99f2-411e-8499-0fe985e6f076" />]
