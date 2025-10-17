@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Lessons.StopwatchPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.65*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.4*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.6*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="dd"/>
+        <Label 
+            Grid.Row="1"
+            Grid.Column="6"
+            Text="hh"/>
+        <Label 
+            Grid.Row="1"
+            Grid.Column="10"
+            LineBreakMode="NoWrap"
+            Text="mm"/>
+        <Label 
+            Grid.Row="1"
+            Grid.Column="14"
+            Text="ss"/>
+
+        <Button
+            Grid.Row="4"
+            Grid.Column="9"
+            Clicked="StartStopwatch"
+            Text="[START]"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="7"
+            Clicked="StopStopwatch"
+            Text="[STOP]"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="4"
+            Grid.Column="5"
+            Clicked="ResetStopwatch"
+            Text="[RESET]"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="3"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="3"
+            x:Name="DayDigit2"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+        
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="1"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="DayDigit1"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="5"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="5"
+            x:Name="HoursDigit1"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="7"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="7"
+            x:Name="HoursDigit2"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="9"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="9"
+            x:Name="MinutesDigit1"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="11"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="11"
+            x:Name="MinutesDigit2"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="13"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="13"
+            x:Name="SecondsDigit1"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="15"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+
+        <Label 
+            Grid.Row="2"
+            Grid.Column="15"
+            x:Name="SecondsDigit2"
+            Text="0" 
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="190"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+    </Grid>
+
+</ContentPage>

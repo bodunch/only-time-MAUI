@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Lessons.StartPage"
+             Title="">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0"
+            Grid.Column="1"
+            Text="only time"
+            FontSize="55"
+
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <Button Grid.Row="2"
+            Grid.Column="1"
+            x:Name="ClockButton" 
+            Clicked="OnClock" 
+            Text="[clock]" 
+            FontSize="20" 
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            VerticalOptions="Center" />
+
+        <Button Grid.Row="3"
+            Grid.Column="1"
+            Clicked="OnTimer"
+            x:Name="TimerButton" 
+            MaximumHeightRequest="10" 
+            Text="[timer]" 
+            FontSize="20" 
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+
+            VerticalOptions="Center"/>
+
+        <Button Grid.Row="4"
+            Grid.Column="1"
+            x:Name="StopwatchButton" 
+            Clicked="OnStopwatch"
+            MinimumHeightRequest="10" 
+            Text="[stopwatch]" 
+            FontSize="20" 
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+
+            VerticalOptions="Center"/>
+
+        <Button Grid.Row="5"
+            Grid.Column="1"
+            x:Name="AlarmButton" 
+            Clicked="OnAlarm"
+            MinimumHeightRequest="10" 
+            Text="[alarm]" 
+            FontSize="20"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+
+            VerticalOptions="Center"/>
+    </Grid>
+</ContentPage>

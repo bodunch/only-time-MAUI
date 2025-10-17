@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MAUI_Lessons.SetedTimerPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="8*"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="1"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="1"
+            x:Name="Hour1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="3"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="3"
+            x:Name="Hour2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="5"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="5"
+            x:Name="Minute1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="7"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="7"
+            x:Name="Minute2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="9"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="9"
+            x:Name="Second1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView
+            Grid.Row="1"
+            Grid.Column="11"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="1"
+            Grid.Column="11"
+            x:Name="Second2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="210"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+    </Grid>
+</ContentPage>

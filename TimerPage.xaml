@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Lessons.TimerPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="6*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="8*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+
+        <Label 
+            Grid.Row="1"
+            Grid.Column="2"
+            Text="hh"/>
+        <Label 
+            Grid.Row="1"
+            Grid.Column="6"
+            Text="mn"
+            LineBreakMode="NoWrap"/>
+        <Label 
+            Grid.Row="1"
+            Grid.Column="10"
+            Text="ss"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="13"
+            Clicked="StartTimer"
+            Text="[START]"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="UpHours1"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Clicked="UpHours2"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="5"
+            Clicked="UpMinutes1"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="7"
+            Clicked="UpMinutes2"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="9"
+            Clicked="UpSeconds1"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="1"
+            Grid.Column="11"
+            Clicked="UpSeconds2"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Clicked="DownHours1"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Clicked="DownHours2"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="5"
+            Clicked="DownMinutes1"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="7"
+            Clicked="DownMinutes2"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="9"
+            Clicked="DownSeconds1"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+        <Button
+            Grid.Row="3"
+            Grid.Column="11"
+            Clicked="DownSeconds2"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"
+            />
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="3"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="3"
+            x:Name="Hours2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="1"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="Hours1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="5"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="5"
+            x:Name="Minutes1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="7"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="7"
+            x:Name="Minutes2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="9"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="9"
+            x:Name="Seconds1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="11"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="11"
+            x:Name="Seconds2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+
+    </Grid>
+    
+</ContentPage>

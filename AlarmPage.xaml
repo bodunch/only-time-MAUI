@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MAUI_Lessons.AlarmPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.8*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="0.7*"/>
+            <RowDefinition Height="0.8*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="1"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="1"
+            x:Name="Hour1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="1"
+            Clicked="UpHour1"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="1"
+            Clicked="DownHour1"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="3"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="3"
+            x:Name="Hour2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="3"
+            Clicked="UpHour2"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="3"
+            Clicked="DownHour2"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="5"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="5"
+            x:Name="Minute1"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"  
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="5"
+            Clicked="UpMinute1"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="5"
+            Clicked="DownMinute1"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <BoxView 
+            Grid.Row="2"
+            Grid.Column="7"
+            Color="#3B3B3B"
+            CornerRadius="15"/>
+        <Label
+            Grid.Row="2"
+            Grid.Column="7"
+            x:Name="Minute2"
+            Text="0"
+            VerticalOptions="Center"
+            HorizontalOptions="Center"
+            VerticalTextAlignment="Center"
+            HorizontalTextAlignment="Center"
+            FontSize="220"
+            FontAttributes="Bold"
+            TextColor="#F5FDFF"/>
+        <Button
+            Grid.Row="1"
+            Grid.Column="7"
+            Clicked="UpMinute2"
+            Text="🠉"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+        <Button
+            Grid.Row="3"
+            Grid.Column="7"
+            Clicked="DownMinute2"
+            Text="🠋"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="9"
+            Clicked="StartAlarm"
+            Text="[START]"
+            TextColor="White"
+            BackgroundColor="#1f1f1f"/>
+    </Grid>
+</ContentPage>
