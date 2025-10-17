@@ -7,8 +7,8 @@ My goal was to create a presentable and attractive timer for use on my Windows 1
 ┣ Clock  
 ┣ Timer  
 &nbsp;&nbsp;┣ Setting the time on the timer  
-&nbsp;&nbsp;&nbsp;┣ Timer operation, i.e., countdown  
-&nbsp;&nbsp;&nbsp;┗ Completion of work timer   
+&nbsp;&nbsp;&nbsp;&nbsp;┣ Timer operation, i.e., countdown  
+&nbsp;&nbsp;&nbsp;&nbsp;┗ Completion of work timer   
 ┣ Stopwatch - with Start, Stop, and Reset functions.  
 ┣ Alarm clock  
    ┣ Setting the alarm time  
