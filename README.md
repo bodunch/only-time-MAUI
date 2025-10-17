@@ -11,6 +11,6 @@ My goal was to create a presentable and attractive timer for use on my Windows 1
 &nbsp;&nbsp;&nbsp;&nbsp;┗ Completion of work timer   
 ┣ Stopwatch - with Start, Stop, and Reset functions.  
 ┣ Alarm clock  
-   ┣ Setting the alarm time  
-      ┣ Display of current time  
-      ┗ Completion of work alarm clock  
+&nbsp;&nbsp;┣ Setting the alarm time  
+&nbsp;&nbsp;&nbsp;&nbsp;┣ Display of current time  
+&nbsp;&nbsp;&nbsp;&nbsp;┗ Completion of work alarm clock  
