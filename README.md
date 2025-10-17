@@ -14,3 +14,4 @@ My goal was to create a presentable and attractive timer for use on my Windows 1
 &nbsp;&nbsp;┣ Setting the alarm time  
 &nbsp;&nbsp;&nbsp;&nbsp;┣ Display of current time  
 &nbsp;&nbsp;&nbsp;&nbsp;┗ Completion of work alarm clock  
+
